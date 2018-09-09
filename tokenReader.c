@@ -82,7 +82,7 @@ void readToken(struct Program *program) {
             counter++;
         }
         TOKEN.name = mallocAndCopy(tempStart, counter);
-        TOKEN.id = getIdCommand(TOKEN.name); //а внутреннее представление переменной?
+        TOKEN.id = getIdCommand(TOKEN.name); 
         if (!TOKEN.id)
             TOKEN.type = VARIABLE;
         else
